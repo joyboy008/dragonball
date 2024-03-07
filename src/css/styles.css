@@ -63,6 +63,19 @@ header nav .menu .options:hover {
     /* Necesario para la transformación */
 }
 
+@media (max-width: 1376px){
+    .img-container{
+        height: 125vh;
+    }
+}
+
+@media (max-width: 822px){
+    .img-container{
+        height: 180vh;
+    }
+}
+
+
 @media (max-width: 770px) {
     header nav {
         flex-direction: column;
@@ -72,6 +85,12 @@ header nav .menu .options:hover {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media (max-width: 545px){
+    .img-container{
+        height: 300vh;
     }
 }
 
@@ -103,26 +122,70 @@ header nav .menu .options:hover {
 .main-container {
     display: flex;
     margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 90%;
     /* background-color: blueviolet; */
 }
 
+.informativo {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    justify-content: center;
+    min-height: 50vh;
+    margin: 100px 0;
+    border-radius: 8px;
+    box-shadow: 0px 0px 12px rgb(66, 66, 66);
+}
+
+.informativo .title{
+    margin: 4px 8px;
+    padding: 5px 20px;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.informativo .description{
+    margin: 3px;
+    padding: 5px 10px;
+    font-weight: 400;
+}
+
+.informativo footer {
+    display: flex;
+    justify-content: end;
+}
+
+.informativo footer a{
+    margin: 0 8px;
+    padding: 5px;
+    text-decoration: none;
+    color: currentColor;
+}
+
+.informativo footer a:hover{
+    color: aquamarine
+}
+
 .img-container {
-    margin: 100px auto;
-    height: 100%;
+    min-height: 70vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0px 0px 12px rgb(66, 66, 66);
 }
 
 .img-container .imagen {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 8px;
-    margin: 20px 0;
+    margin: 10px;
     width: 220px;
     min-width: 200px;
     min-height: 500px;
@@ -140,19 +203,18 @@ header nav .menu .options:hover {
 }
 
 .img-container .imagen .nombre {
-    position: absolute;
     background-color: black;
     border-radius: 5px;
     color: white;
-    display: none;
+    opacity: 0;
     min-width: 100px;
     width: 125px;
     height: 40px;
-    margin-top: -45px;
 }
 
 .img-container .imagen:hover .nombre {
     display: flex;
+    opacity: 1;
     justify-content: center;
     align-items: center;
 }
@@ -164,11 +226,12 @@ header nav .menu .options:hover {
 }
 
 .img-container .imagen .description {
-    display: none;
+    opacity: 0;
 }
 
 .img-container .imagen:hover .description {
     display: flex;
+    opacity: 1;
     color: whitesmoke;
     margin-top: 5px;
 }
@@ -183,4 +246,17 @@ header nav .menu .options:hover {
 
 .img-container .imagen:hover .azul {
     display: none;
+}
+
+.infoMia{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoMia a{
+    text-decoration: none;
+    color: white;
 }
