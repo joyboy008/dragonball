@@ -1,200 +1,513 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cards Dragon Ball</title>
-    <link rel="stylesheet" href="./src/css/styles.css" />
-    <link
-      rel="icon"
-      type="image/svg"
-      href="./src/images/Dragon Balls - DB.png"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
-    <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#8f7ada" />
-    <meta name="description" content="Cards Dragon Ball" />
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cards Dragon Ball</title>
+  <link rel="stylesheet" href="./src/css/styles.css" />
+  <link rel="icon" type="image/svg" href="./src/images/Dragon Balls - DB.png" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#8f7ada" />
+  <meta name="description" content="Cards Dragon Ball" />
+</head>
+
+<body>
+  <header class="header">
+    <nav>
+      <div class="title">
+        <a href="http://127.0.0.1:5500/index.html">
+          Dragon Ball
+          <img src="/src/images/Dragon Balls - DB.png" alt="balls" /></a>
+      </div>
+      <div class="menu">
+        <a href="#refdbz" class="options">DBZ</a>
+        <a href="#refgt" class="options">GT</a>
+        <a href="#refsuper" class="options">Super</a>
+        <a href="#refdaima" class="options">Daima</a>
+        <a href="https://github.com/joyboy008/dragonball" class="options" target="_blank"><svg viewBox="0 0 100 100"
+            role="img" aria-label="Logotipo de Github">
+            <path fill="currentColor"
+              d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z">
+            </path>
+          </svg></a>
+      </div>
+    </nav>
+  </header>
+  <main class="main-container">
+    <section class="informativo">
+      <header class="title">
+        <h1>Dragon Ball</h1>
+      </header>
+      <article class="description">
+        <p>
+          "Dragon Ball es como el combo supremo de artes marciales, risas y
+          peinados imposibles. Todo comienza con un chico con cola de mono
+          llamado Goku, que tiene un apetito insaciable por la comida y las
+          aventuras. Junto con sus amigos, como el maestro de las artes
+          marciales Muten Roshi y el inimitable Krilin, se enfrentan a
+          villanos más extraños que una pizza con piña.
+        </p>
+        <br />
+        <p>
+          A medida que avanzan, Goku descubre que tiene un talento natural
+          para transformarse en algo nuevo cada vez que el guion lo exige.
+          Desde el mono gigante hasta el guerrero rubio y musculoso, Goku
+          colecciona más transformaciones que una fashionista en una tienda de
+          ropa. También se enfrenta a enemigos tan poderosos que podrían
+          derribar un rascacielos con un estornudo.
+        </p>
+        <br />
+        <p>
+          Dragon Ball es la mezcla perfecta de luchas épicas, comedia
+          descarada y transformaciones capilares que desafían las leyes de la
+          física. ¡Prepárate para reír, llorar y preguntarte por qué nadie en
+          este universo parece preocuparse por la destrucción masiva mientras
+          disfrutan de una buena pelea!"
+        </p>
+      </article>
+      <footer><a href="#">saber más...</a></footer>
+    </section>
+    <section class="img-container">
+      <article class="imagen">
+        <p class="nombre">
+          <span class="text">Lunch</span>
+        </p>
+        <img class="azul" src="src/images/50-lunch.png" alt="lunch" />
+        <img class="dorada" src="src/images/Lunch (Bad) - 21st Tenkaichi Budokai Saga.png" alt="lunch" />
+        <span class="description">Cambia de personalidad al estornudar, amiga de Goku y los
+          demás.</span>
+      </article>
+      <article class="imagen">
+        <p class="nombre">
+          <span class="text">Bulma</span>
+        </p>
+        <img class="azul" src="src/images/Bulma Namek Saga clothes - DBZ Frieza Saga.png" alt="bulma" />
+        <img class="dorada" src="src/images/02 - bulma2.png" alt="bulma" />
+
+        <span class="description">Genia inventora, amiga cercana de Goku, esposa de Vegeta.</span>
+      </article>
+      <article class="imagen">
+        <p class="nombre">
+          <span class="text">Son Gohan</span>
+        </p>
+        <img class="azul" src="src/images/Grandpa Son Gohan (With mask) - DB Uranai Baba Saga.png" alt="Son Gohan" />
+        <img class="dorada" src="src/images/Grandpa Son Gohan - DB Uranai Baba Saga.png" alt="Son Gohan" />
+
+        <span class="description">Abuelito de Goku, cría de pequeño a Goku y da inicio "Dragon
+          Ball".</span>
+      </article>
+      <article class="imagen">
+        <p class="nombre">
+          <span class="text">Gohan</span>
+        </p>
+        <img class="azul" src="src/images/Gohan - End DBZ.png" alt="Gohan" />
+        <img class="dorada" src="src/images/12 - gohan-ss2-2.png" alt="Gohan" />
+
+        <span class="description">Hijo de Goku, guerrero poderoso, balancea la lucha con la vida
+          académica.</span>
+      </article>
+      <article class="imagen">
+        <p class="nombre">
+          <span class="text">Vegeta</span>
+        </p>
+        <img class="azul" src="src/images/14-vegeta.png" alt="Vegeta" />
+        <img class="dorada" src="src/images/76-vegeta GT SS version 2.png" alt="Vegeta" />
+
+        <span class="description" id="refdbz">Príncipe de los saiyajin, rival eterno de Goku, evoluciona de
+          villano a héroe.</span>
+      </article>
+    </section>
+    <section class="informativo">
+      <header class="title">
+        <h1>Dragon Ball Z</h1>
+      </header>
+      <article class="description">
+        <p>
+          "Dragon Ball Z lleva las cosas al siguiente nivel con más gritos,
+          músculos inflados y peleas intergalácticas que una fiesta de
+          superhéroes. La historia comienza con nuestro héroe, Goku, ahora con
+          un peinado aún más salvaje y un hijo llamado Gohan, que parece tener
+          una reserva infinita de poder gritando.
+        </p>
+        <br />
+        <p>
+          En esta entrega, los villanos son más grandiosos que las facturas de
+          electricidad en una batalla de superpoderes. Desde Freezer, un
+          alienígena con una piel más pálida que un vampiro en el sol, hasta
+          Cell, un androide con una obsesión por los juegos de poder. Y por
+          supuesto, no podemos olvidar a Majin Buu, una gelatina rosa con un
+          apetito insaciable, que hace que los comedores compulsivos parezcan
+          amateurs.
+        </p>
+        <br />
+        <p>
+          Goku y sus amigos se enfrentan a desafíos que harían que el
+          entrenamiento de CrossFit parezca un paseo por el parque. Además,
+          descubrimos que la transformación favorita de Goku es ahora el Super
+          Saiyan, que básicamente es el equivalente de un mal día en el
+          gimnasio, pero con más explosiones de energía.
+        </p>
+        <p>
+          Dragon Ball Z es como una montaña rusa de emociones, con giros y
+          vueltas que te dejan gritando '¡Kamehameha!' mientras te sumerges en
+          el caos intergaláctico. ¡Prepárate para una dosis épica de acción,
+          amistad y cabellos que desafían todas las leyes de la gravedad!"
+        </p>
+      </article>
+      <footer><a href="#">saber más...</a></footer>
+    </section>
+    <section class="img-container">
+      <article class="imagen">
+        <p class="nombre">
+          <span class="text">Lunch</span>
+        </p>
+        <img class="azul" src="src/images/50-lunch.png" alt="lunch" />
+        <img class="dorada" src="src/images/Lunch (Bad) - 21st Tenkaichi Budokai Saga.png" alt="lunch" />
+        <span class="description">Cambia de personalidad al estornudar, amiga de Goku y los
+          demás.</span>
+      </article>
+      <article class="imagen">
+        <p class="nombre">
+          <span class="text">Bulma</span>
+        </p>
+        <img class="azul" src="src/images/Bulma Namek Saga clothes - DBZ Frieza Saga.png" alt="bulma" />
+        <img class="dorada" src="src/images/02 - bulma2.png" alt="bulma" />
+
+        <span class="description">Genia inventora, amiga cercana de Goku, esposa de Vegeta.</span>
+      </article>
+      <article class="imagen">
+        <p class="nombre">
+          <span class="text">Son Gohan</span>
+        </p>
+        <img class="azul" src="src/images/Grandpa Son Gohan (With mask) - DB Uranai Baba Saga.png" alt="Son Gohan" />
+        <img class="dorada" src="src/images/Grandpa Son Gohan - DB Uranai Baba Saga.png" alt="Son Gohan" />
+
+        <span class="description">Abuelito de Goku, cría de pequeño a Goku y da inicio "Dragon
+          Ball".</span>
+      </article>
+      <article class="imagen">
+        <p class="nombre">
+          <span class="text">Gohan</span>
+        </p>
+        <img class="azul" src="src/images/Gohan - End DBZ.png" alt="Gohan" />
+        <img class="dorada" src="src/images/12 - gohan-ss2-2.png" alt="Gohan" />
+
+        <span class="description">Hijo de Goku, guerrero poderoso, balancea la lucha con la vida
+          académica.</span>
+      </article>
+      <article class="imagen">
+        <p class="nombre">
+          <span class="text">Vegeta</span>
+        </p>
+        <img class="azul" src="src/images/14-vegeta.png" alt="Vegeta" />
+        <img class="dorada" src="src/images/76-vegeta GT SS version 2.png" alt="Vegeta" />
+
+        <span class="description" id="refgt">Príncipe de los saiyajin, rival eterno de Goku, evoluciona de
+          villano a héroe.</span>
+      </article>
+    </section>
+    <section class="informativo">
+      <header class="title">
+        <h1>Dragon Ball GT</h1>
+      </header>
+      <article class="description">
+        <p>
+          "Dragon Ball Z lleva las cosas al siguiente nivel con más gritos,
+          músculos inflados y peleas intergalácticas que una fiesta de
+          superhéroes. La historia comienza con nuestro héroe, Goku, ahora con
+          un peinado aún más salvaje y un hijo llamado Gohan, que parece tener
+          una reserva infinita de poder gritando.
+        </p>
+        <br />
+        <p>
+          En esta entrega, los villanos son más grandiosos que las facturas de
+          electricidad en una batalla de superpoderes. Desde Freezer, un
+          alienígena con una piel más pálida que un vampiro en el sol, hasta
+          Cell, un androide con una obsesión por los juegos de poder. Y por
+          supuesto, no podemos olvidar a Majin Buu, una gelatina rosa con un
+          apetito insaciable, que hace que los comedores compulsivos parezcan
+          amateurs.
+        </p>
+        <br />
+        <p>
+          Goku y sus amigos se enfrentan a desafíos que harían que el
+          entrenamiento de CrossFit parezca un paseo por el parque. Además,
+          descubrimos que la transformación favorita de Goku es ahora el Super
+          Saiyan, que básicamente es el equivalente de un mal día en el
+          gimnasio, pero con más explosiones de energía.
+        </p>
+        <p>
+          Dragon Ball Z es como una montaña rusa de emociones, con giros y
+          vueltas que te dejan gritando '¡Kamehameha!' mientras te sumerges en
+          el caos intergaláctico. ¡Prepárate para una dosis épica de acción,
+          amistad y cabellos que desafían todas las leyes de la gravedad!"
+        </p>
+      </article>
+      <footer><a href="#">saber más...</a></footer>
+    </section>
+    <section class="img-container">
+      <article class="imagen">
+        <p class="nombre">
+          <span class="text">Lunch</span>
+        </p>
+        <img class="azul" src="src/images/50-lunch.png" alt="lunch" />
+        <img class="dorada" src="src/images/Lunch (Bad) - 21st Tenkaichi Budokai Saga.png" alt="lunch" />
+        <span class="description">Cambia de personalidad al estornudar, amiga de Goku y los
+          demás.</span>
+      </article>
+      <article class="imagen">
+        <p class="nombre">
+          <span class="text">Bulma</span>
+        </p>
+        <img class="azul" src="src/images/Bulma Namek Saga clothes - DBZ Frieza Saga.png" alt="bulma" />
+        <img class="dorada" src="src/images/02 - bulma2.png" alt="bulma" />
+
+        <span class="description">Genia inventora, amiga cercana de Goku, esposa de Vegeta.</span>
+      </article>
+      <article class="imagen">
+        <p class="nombre">
+          <span class="text">Son Gohan</span>
+        </p>
+        <img class="azul" src="src/images/Grandpa Son Gohan (With mask) - DB Uranai Baba Saga.png" alt="Son Gohan" />
+        <img class="dorada" src="src/images/Grandpa Son Gohan - DB Uranai Baba Saga.png" alt="Son Gohan" />
+
+        <span class="description">Abuelito de Goku, cría de pequeño a Goku y da inicio "Dragon
+          Ball".</span>
+      </article>
+      <article class="imagen">
+        <p class="nombre">
+          <span class="text">Gohan</span>
+        </p>
+        <img class="azul" src="src/images/Gohan - End DBZ.png" alt="Gohan" />
+        <img class="dorada" src="src/images/12 - gohan-ss2-2.png" alt="Gohan" />
+
+        <span class="description">Hijo de Goku, guerrero poderoso, balancea la lucha con la vida
+          académica.</span>
+      </article>
+      <article class="imagen">
+        <p class="nombre">
+          <span class="text">Vegeta</span>
+        </p>
+        <img class="azul" src="src/images/14-vegeta.png" alt="Vegeta" />
+        <img class="dorada" src="src/images/76-vegeta GT SS version 2.png" alt="Vegeta" />
+
+        <span class="description" id="refsuper">Príncipe de los saiyajin, rival eterno de Goku, evoluciona de
+          villano a héroe.</span>
+      </article>
+    </section>
+    <section class="informativo">
+      <header class="title">
+        <h1>Dragon Ball Super</h1>
+      </header>
+      <article class="description">
+        <p>
+          "Dragon Ball Z lleva las cosas al siguiente nivel con más gritos,
+          músculos inflados y peleas intergalácticas que una fiesta de
+          superhéroes. La historia comienza con nuestro héroe, Goku, ahora con
+          un peinado aún más salvaje y un hijo llamado Gohan, que parece tener
+          una reserva infinita de poder gritando.
+        </p>
+        <br />
+        <p>
+          En esta entrega, los villanos son más grandiosos que las facturas de
+          electricidad en una batalla de superpoderes. Desde Freezer, un
+          alienígena con una piel más pálida que un vampiro en el sol, hasta
+          Cell, un androide con una obsesión por los juegos de poder. Y por
+          supuesto, no podemos olvidar a Majin Buu, una gelatina rosa con un
+          apetito insaciable, que hace que los comedores compulsivos parezcan
+          amateurs.
+        </p>
+        <br />
+        <p>
+          Goku y sus amigos se enfrentan a desafíos que harían que el
+          entrenamiento de CrossFit parezca un paseo por el parque. Además,
+          descubrimos que la transformación favorita de Goku es ahora el Super
+          Saiyan, que básicamente es el equivalente de un mal día en el
+          gimnasio, pero con más explosiones de energía.
+        </p>
+        <p>
+          Dragon Ball Z es como una montaña rusa de emociones, con giros y
+          vueltas que te dejan gritando '¡Kamehameha!' mientras te sumerges en
+          el caos intergaláctico. ¡Prepárate para una dosis épica de acción,
+          amistad y cabellos que desafían todas las leyes de la gravedad!"
+        </p>
+      </article>
+      <footer><a href="#">saber más...</a></footer>
+    </section>
+    <section class="img-container">
+      <article class="imagen">
+        <p class="nombre">
+          <span class="text">Lunch</span>
+        </p>
+        <img class="azul" src="src/images/50-lunch.png" alt="lunch" />
+        <img class="dorada" src="src/images/Lunch (Bad) - 21st Tenkaichi Budokai Saga.png" alt="lunch" />
+        <span class="description">Cambia de personalidad al estornudar, amiga de Goku y los
+          demás.</span>
+      </article>
+      <article class="imagen">
+        <p class="nombre">
+          <span class="text">Bulma</span>
+        </p>
+        <img class="azul" src="src/images/Bulma Namek Saga clothes - DBZ Frieza Saga.png" alt="bulma" />
+        <img class="dorada" src="src/images/02 - bulma2.png" alt="bulma" />
+
+        <span class="description">Genia inventora, amiga cercana de Goku, esposa de Vegeta.</span>
+      </article>
+      <article class="imagen">
+        <p class="nombre">
+          <span class="text">Son Gohan</span>
+        </p>
+        <img class="azul" src="src/images/Grandpa Son Gohan (With mask) - DB Uranai Baba Saga.png" alt="Son Gohan" />
+        <img class="dorada" src="src/images/Grandpa Son Gohan - DB Uranai Baba Saga.png" alt="Son Gohan" />
+
+        <span class="description">Abuelito de Goku, cría de pequeño a Goku y da inicio "Dragon
+          Ball".</span>
+      </article>
+      <article class="imagen">
+        <p class="nombre">
+          <span class="text">Gohan</span>
+        </p>
+        <img class="azul" src="src/images/Gohan - End DBZ.png" alt="Gohan" />
+        <img class="dorada" src="src/images/12 - gohan-ss2-2.png" alt="Gohan" />
+
+        <span class="description">Hijo de Goku, guerrero poderoso, balancea la lucha con la vida
+          académica.</span>
+      </article>
+      <article class="imagen">
+        <p class="nombre">
+          <span class="text">Vegeta</span>
+        </p>
+        <img class="azul" src="src/images/14-vegeta.png" alt="Vegeta" />
+        <img class="dorada" src="src/images/76-vegeta GT SS version 2.png" alt="Vegeta" />
+
+        <span class="description" id="refdaima">Príncipe de los saiyajin, rival eterno de Goku, evoluciona de
+          villano a héroe.</span>
+      </article>
+    </section>
+    <section class="informativo">
+      <header class="title">
+        <h1>Dragon Ball Daima</h1>
+      </header>
+      <article class="description">
+        <p>
+          "Dragon Ball Z lleva las cosas al siguiente nivel con más gritos,
+          músculos inflados y peleas intergalácticas que una fiesta de
+          superhéroes. La historia comienza con nuestro héroe, Goku, ahora con
+          un peinado aún más salvaje y un hijo llamado Gohan, que parece tener
+          una reserva infinita de poder gritando.
+        </p>
+        <br />
+        <p>
+          En esta entrega, los villanos son más grandiosos que las facturas de
+          electricidad en una batalla de superpoderes. Desde Freezer, un
+          alienígena con una piel más pálida que un vampiro en el sol, hasta
+          Cell, un androide con una obsesión por los juegos de poder. Y por
+          supuesto, no podemos olvidar a Majin Buu, una gelatina rosa con un
+          apetito insaciable, que hace que los comedores compulsivos parezcan
+          amateurs.
+        </p>
+        <br />
+        <p>
+          Goku y sus amigos se enfrentan a desafíos que harían que el
+          entrenamiento de CrossFit parezca un paseo por el parque. Además,
+          descubrimos que la transformación favorita de Goku es ahora el Super
+          Saiyan, que básicamente es el equivalente de un mal día en el
+          gimnasio, pero con más explosiones de energía.
+        </p>
+        <p>
+          Dragon Ball Z es como una montaña rusa de emociones, con giros y
+          vueltas que te dejan gritando '¡Kamehameha!' mientras te sumerges en
+          el caos intergaláctico. ¡Prepárate para una dosis épica de acción,
+          amistad y cabellos que desafían todas las leyes de la gravedad!"
+        </p>
+      </article>
+      <footer><a href="#">saber más...</a></footer>
+    </section>
+    <section class="img-container">
+      <article class="imagen">
+        <p class="nombre">
+          <span class="text">Lunch</span>
+        </p>
+        <img class="azul" src="src/images/50-lunch.png" alt="lunch" />
+        <img class="dorada" src="src/images/Lunch (Bad) - 21st Tenkaichi Budokai Saga.png" alt="lunch" />
+        <span class="description">Cambia de personalidad al estornudar, amiga de Goku y los
+          demás.</span>
+      </article>
+      <article class="imagen">
+        <p class="nombre">
+          <span class="text">Bulma</span>
+        </p>
+        <img class="azul" src="src/images/Bulma Namek Saga clothes - DBZ Frieza Saga.png" alt="bulma" />
+        <img class="dorada" src="src/images/02 - bulma2.png" alt="bulma" />
+
+        <span class="description">Genia inventora, amiga cercana de Goku, esposa de Vegeta.</span>
+      </article>
+      <article class="imagen">
+        <p class="nombre">
+          <span class="text">Goku</span>
+        </p>
+        <img class="azul" src="src/images/Goku - Plan to Eradicate the Super Saiyajin (Remake OVA 2010).png"
+          alt="Son Gohan" />
+        <img class="dorada" src="src/images/Goku Jr (Highlights in eyes) - DBGT TV Special.png" alt="Son Gohan" />
+
+        <span class="description">Abuelito de Goku, cría de pequeño a Goku y da inicio "Dragon
+          Ball".</span>
+      </article>
+      <article class="imagen">
+        <p class="nombre">
+          <span class="text">Gohan</span>
+        </p>
+        <img class="azul" src="src/images/Gohan - End DBZ.png" alt="Gohan" />
+        <img class="dorada" src="src/images/12 - gohan-ss2-2.png" alt="Gohan" />
+
+        <span class="description">Hijo de Goku, guerrero poderoso, balancea la lucha con la vida
+          académica.</span>
+      </article>
+      <article class="imagen">
+        <p class="nombre">
+          <span class="text">Vegeta</span>
+        </p>
+        <img class="azul" src="src/images/14-vegeta.png" alt="Vegeta" />
+        <img class="dorada" src="src/images/76-vegeta GT SS version 2.png" alt="Vegeta" />
+
+        <span class="description">Príncipe de los saiyajin, rival eterno de Goku, evoluciona de
+          villano a héroe.</span>
+      </article>
+    </section>
+
+  </main>
+  <footer class="infoMia">
     <header>
-      <nav>
-        <div class="title">
-          <a href="http://127.0.0.1:5500/index.html">
-            Dragon Ball
-            <img src="/src/images/Dragon Balls - DB.png" alt="balls"
-          /></a>
-        </div>
-        <div class="menu">
-          <a class="options" href="#">Esferas</a>
-          <a class="options" href="#">Planetas</a>
-          <a class="options" href="#">Héroes</a>
-        </div>
-      </nav>
+      <p>Contacto</p>
+      <div class="svg-container">
+        <a href="https://marlonralda.dev" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960">
+            <path fill="currentColor"
+              d="M440-120v-80h320v-284q0-117-81.5-198.5T480-764q-117 0-198.5 81.5T200-484v244h-40q-33 0-56.5-23.5T80-320v-80q0-21 10.5-39.5T120-469l3-53q8-68 39.5-126t79-101q47.5-43 109-67T480-840q68 0 129 24t109 66.5Q766-707 797-649t40 126l3 52q19 9 29.5 27t10.5 38v92q0 20-10.5 38T840-249v49q0 33-23.5 56.5T760-120H440Zm-80-280q-17 0-28.5-11.5T320-440q0-17 11.5-28.5T360-480q17 0 28.5 11.5T400-440q0 17-11.5 28.5T360-400Zm240 0q-17 0-28.5-11.5T560-440q0-17 11.5-28.5T600-480q17 0 28.5 11.5T640-440q0 17-11.5 28.5T600-400Zm-359-62q-7-106 64-182t177-76q89 0 156.5 56.5T720-519q-91-1-167.5-49T435-698q-16 80-67.5 142.5T241-462Z" />
+          </svg></a>
+
+        <a href="https://x.com/northBull7" target="_blank">
+          <svg role="img" aria-label="Logotipo de X">
+            <path fill="currentColor"
+              d="M 27.535156 0 L 32.898438 0 L 21.117188 13.578125 L 34.882812 32 L 24.078125 32 L 15.621094 20.804688 L 5.9375 32 L 0.570312 32 L 13.054688 17.476562 L -0.128906 0 L 10.941406 0 L 18.585938 10.226562 Z M 25.65625 28.8125 L 28.628906 28.8125 L 9.378906 3.070312 L 6.183594 3.070312 Z M 25.65625 28.8125 ">
+            </path>
+          </svg>
+        </a>
+        <a href="https://github.com/joyboy008" target="_blank"><svg viewBox="0 0 100 100"
+          role="img" aria-label="Logotipo de Github">
+          <path fill="currentColor"
+            d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z">
+          </path>
+        </svg></a>
+      </div>
     </header>
-    <main class="main-container">
-      <section class="informativo">
-        <header class="title">
-          <h1>Dragon Ball</h1>
-        </header>
-        <article class="description">
-          <p>
-            "Dragon Ball es como el combo supremo de artes marciales, risas y
-            peinados imposibles. Todo comienza con un chico con cola de mono
-            llamado Goku, que tiene un apetito insaciable por la comida y las
-            aventuras. Junto con sus amigos, como el maestro de las artes
-            marciales Muten Roshi y el inimitable Krilin, se enfrentan a
-            villanos más extraños que una pizza con piña.
-          </p>
-          <br />
-          <p>
-            A medida que avanzan, Goku descubre que tiene un talento natural
-            para transformarse en algo nuevo cada vez que el guion lo exige.
-            Desde el mono gigante hasta el guerrero rubio y musculoso, Goku
-            colecciona más transformaciones que una fashionista en una tienda de
-            ropa. También se enfrenta a enemigos tan poderosos que podrían
-            derribar un rascacielos con un estornudo.
-          </p>
-          <br />
-          <p>
-            Dragon Ball es la mezcla perfecta de luchas épicas, comedia
-            descarada y transformaciones capilares que desafían las leyes de la
-            física. ¡Prepárate para reír, llorar y preguntarte por qué nadie en
-            este universo parece preocuparse por la destrucción masiva mientras
-            disfrutan de una buena pelea!"
-          </p>
-        </article>
-        <footer><a href="#">saber más...</a></footer>
-      </section>
-      <section class="img-container">
-        <article class="imagen">
-          <p class="nombre">
-            <span class="text">Lunch</span>
-          </p>
-          <img class="azul" src="src/images/50-lunch.png" alt="lunch" />
-          <img
-            class="dorada"
-            src="src/images/Lunch (Bad) - 21st Tenkaichi Budokai Saga.png"
-            alt="lunch"
-          />
-          <span class="description"
-            >Cambia de personalidad al estornudar, amiga de Goku y los
-            demás.</span
-          >
-        </article>
-        <article class="imagen">
-          <p class="nombre">
-            <span class="text">Bulma</span>
-          </p>
-          <img
-            class="azul"
-            src="src/images/Bulma Namek Saga clothes - DBZ Frieza Saga.png"
-            alt="bulma"
-          />
-          <img class="dorada" src="src/images/02 - bulma2.png" alt="bulma" />
-
-          <span class="description"
-            >Genia inventora, amiga cercana de Goku, esposa de Vegeta.</span
-          >
-        </article>
-        <article class="imagen">
-          <p class="nombre">
-            <span class="text">Son Gohan</span>
-          </p>
-          <img
-            class="azul"
-            src="src/images/Grandpa Son Gohan (With mask) - DB Uranai Baba Saga.png"
-            alt="Son Gohan"
-          />
-          <img
-            class="dorada"
-            src="src/images/Grandpa Son Gohan - DB Uranai Baba Saga.png"
-            alt="Son Gohan"
-          />
-
-          <span class="description"
-            >Abuelito de Goku, cría de pequeño a Goku y da inicio "Dragon
-            Ball".</span
-          >
-        </article>
-        <article class="imagen">
-          <p class="nombre">
-            <span class="text">Gohan</span>
-          </p>
-          <img class="azul" src="src/images/Gohan - End DBZ.png" alt="Gohan" />
-          <img
-            class="dorada"
-            src="src/images/12 - gohan-ss2-2.png"
-            alt="Gohan"
-          />
-
-          <span class="description"
-            >Hijo de Goku, guerrero poderoso, balancea la lucha con la vida
-            académica.</span
-          >
-        </article>
-        <article class="imagen">
-          <p class="nombre">
-            <span class="text">Vegeta</span>
-          </p>
-          <img class="azul" src="src/images/14-vegeta.png" alt="Vegeta" />
-          <img
-            class="dorada"
-            src="src/images/76-vegeta GT SS version 2.png"
-            alt="Vegeta"
-          />
-
-          <span class="description"
-            >Príncipe de los saiyajin, rival eterno de Goku, evoluciona de
-            villano a héroe.</span
-          >
-        </article>
-      </section>
-      <section class="informativo">
-        <header class="title">
-          <h1>Dragon Ball Z</h1>
-        </header>
-        <article class="description">
-          <p>
-            "Dragon Ball Z lleva las cosas al siguiente nivel con más gritos,
-            músculos inflados y peleas intergalácticas que una fiesta de
-            superhéroes. La historia comienza con nuestro héroe, Goku, ahora con
-            un peinado aún más salvaje y un hijo llamado Gohan, que parece tener
-            una reserva infinita de poder gritando.
-          </p>
-          <br />
-          <p>
-            En esta entrega, los villanos son más grandiosos que las facturas de
-            electricidad en una batalla de superpoderes. Desde Freezer, un
-            alienígena con una piel más pálida que un vampiro en el sol, hasta
-            Cell, un androide con una obsesión por los juegos de poder. Y por
-            supuesto, no podemos olvidar a Majin Buu, una gelatina rosa con un
-            apetito insaciable, que hace que los comedores compulsivos parezcan
-            amateurs.
-          </p>
-          <br />
-          <p>
-            Goku y sus amigos se enfrentan a desafíos que harían que el
-            entrenamiento de CrossFit parezca un paseo por el parque. Además,
-            descubrimos que la transformación favorita de Goku es ahora el Super
-            Saiyan, que básicamente es el equivalente de un mal día en el
-            gimnasio, pero con más explosiones de energía.
-          </p>
-          <p>
-            Dragon Ball Z es como una montaña rusa de emociones, con giros y
-            vueltas que te dejan gritando '¡Kamehameha!' mientras te sumerges en
-            el caos intergaláctico. ¡Prepárate para una dosis épica de acción,
-            amistad y cabellos que desafían todas las leyes de la gravedad!"
-          </p>
-        </article>
-        <footer><a href="#">saber más...</a></footer>
-      </section>
+    <main>
+      <a target="_blank" href="https://wa.me/50250314174" rel="noreferrer">Ing. Marlon Ralda 2024</a>
     </main>
-    <footer class="infoMia">
-      <a href="https://marlonralda.dev">Ing. Marlon Ralda 2024</a>
-    </footer>
-  </body>
+  </footer>
+</body>
+
 </html>
