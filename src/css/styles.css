@@ -16,11 +16,15 @@ a {
 }
 
 .header {
+    background-color: black;
+    opacity: 0.9;
+    background-image: url("../images/optimizadas/goku-nav.png");
+    background-position: center center;
+    background-repeat: no-repeat;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background: currentColor;
     box-shadow: 0 2px 6px rgba(64, 64, 64, 0.5);
     /* Sombra opcional para darle profundidad */
     z-index: 1000;
@@ -203,12 +207,14 @@ header nav .menu .options:hover {
 
 .img-container {
     min-height: 70vh;
+    width: 1050px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 10px;
     box-shadow: 0px 0px 12px rgb(66, 66, 66);
+    max-width: 1000px;
 }
 
 .img-container .image {
