@@ -46,6 +46,7 @@ header nav .title a {
     align-items: center;
     justify-content: center;
     font-size: 30px;
+    font-weight: 500;
     color: whitesmoke;
 }
 
@@ -87,10 +88,10 @@ header nav .menu .options svg {
 
 header nav .menu .options:hover {
     color: aquamarine;
+
     animation: agrandarTexto 0.5s infinite alternate;
     /* Se agranda en 2 segundos, infinitamente y alternando entre inicio y fin */
     display: inline-block;
-
     /* Necesario para la transformación */
 }
 
@@ -110,10 +111,17 @@ header nav .menu .options:hover {
 @media (max-width: 770px) {
     .header {
         height: 105px;
+        background-position: center right;
     }
 
     header nav {
+        align-items: start;
         flex-direction: column;
+        margin: 0 10px;
+    }
+
+    header nav .title {
+        margin: 0 5px;
     }
 
     header nav .menu {
@@ -153,6 +161,29 @@ header nav .menu .options:hover {
     }
 }
 
+@keyframes fadeOut {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
 
 .main-container {
     display: flex;
@@ -207,14 +238,14 @@ header nav .menu .options:hover {
 
 .img-container {
     min-height: 70vh;
-    width: 1050px;
+    height: auto;
+    max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    box-shadow: 0px 0px 12px rgb(66, 66, 66);
-    max-width: 1000px;
+    border-bottom: 1px solid #eee;
 }
 
 .img-container .image {
@@ -226,6 +257,7 @@ header nav .menu .options:hover {
     width: 200px;
     min-width: 200px;
     min-height: 500px;
+    padding-bottom: 5px;
 }
 
 .img-container .image img {
@@ -238,6 +270,7 @@ header nav .menu .options:hover {
     display: inline-block;
     /* Necesario para la transformación */
 }
+
 
 .img-container .image .nombre {
     background-color: black;
@@ -264,6 +297,7 @@ header nav .menu .options:hover {
 
 .img-container .image .description {
     opacity: 0;
+    margin-top: 5px;
 }
 
 .img-container .image:hover .description {
@@ -273,70 +307,136 @@ header nav .menu .options:hover {
     margin-top: 5px;
 }
 
-.img2 {
+.img-container .image .img2 {
     display: none;
 }
 
 .img-container .image:hover .img2 {
     display: flex;
+    visibility: visible;
+    opacity: 1;
+    animation: fadeIn 0.5s forwards;
 }
 
 .img-container .image:hover .img1 {
+    animation: fadeOut 0.5s forwards;
     display: none;
 }
 
 
-footer {
-    margin: 20px 0;
+.img-container .imagen .img1,
+.img-container .imagen .img2 {
+    transition: visibility 0s, opacity 0.8s linear;
 }
 
-footer header {
+.link {
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+    border: 0px;
+    color: whitesmoke;
+    width: 100%;
+    text-align: left;
+    background: transparent;
+}
+
+.link:hover {
+    color: aquamarine;
+}
+
+.footer-container {
+    margin: 10px 0;
+    background: rgb(15, 15, 15);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    font-family: consolas;
+}
+
+.infoMia {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+footer a {
+    color: whitesmoke;
+}
+
+footer a:hover {
+    color: aquamarine
+}
+
+.infoMia header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #eee
+    color: whitesmoke;
 }
 
-footer header p {
+.infoMia header p {
     font-weight: 400;
     font-size: 24px;
 }
 
-footer header .svg-container {
+.infoMia .svg-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 200px;
-    color: white;
-    margin: 10px;
+    color: whitesmoke;
 }
 
-footer header .svg-container a:hover {
+.svg-container a:hover {
     animation: agrandarTexto 0.5s infinite alternate;
     color: aquamarine;
 }
 
 
-footer header .svg-container svg {
+.svg-container svg {
     width: 35px;
     height: 35px;
 }
 
-.infoMia {
-    width: 100%;
-    height: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+summary {
+    list-style: none;
+    cursor: pointer;
+    position: relative;
 }
 
-.infoMia a {
-    text-decoration: none;
-    color: white;
+details summary::before {
+    content: "→";
+    position: absolute;
+    color: aquamarine;
+    transition: transform 0.5s ease;
+
 }
 
-.infoMia a:hover {
-    color: aquamarine
+details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+summary div p {
+    padding-left: 20px;
+    padding-bottom: 3px;
+}
+
+.contribute {
+    margin-top: 5px;
+    max-width: 200px;
+}
+
+.thanks {
+    margin-top: 5px;
+    max-width: 200px;
+}
+
+.createdby {
+    margin: 3px;
+    padding: 5px;
 }
