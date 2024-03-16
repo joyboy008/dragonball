@@ -101,6 +101,37 @@ header nav .menu .options:hover {
     }
 }
 
+@media (max-width: 916px) {
+    .footer-container{
+        margin: 10px;
+        height: auto;
+    }
+
+
+    .infoMia{
+        flex-direction: column; 
+        margin: auto;
+        /* background: red; */
+    }
+
+    .header-footer{
+        flex-direction: column;
+    }
+
+    .main-footer{
+        flex-direction: column;
+        gap: 3px;
+        width: auto;
+        max-width: 450px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-footer .contribute, .main-container .thanks{
+        margin: 5px;
+    }
+}
+
 @media (max-width: 822px) {
     .img-container {
         height: auto;
@@ -129,6 +160,7 @@ header nav .menu .options:hover {
         justify-content: center;
         align-items: center;
     }
+
 }
 
 @media (max-width: 545px) {
@@ -185,6 +217,20 @@ header nav .menu .options:hover {
     }
 }
 
+@keyframes ayudaOut {
+    0% {visibility: hidden;
+        opacity: 0.1;
+    }
+
+    50%{visibility: visible;
+        opacity: 1;
+    }
+    100% {
+        visibility: hidden;
+        opacity: 0.1;
+    }
+}
+
 .main-container {
     display: flex;
     margin: auto;
@@ -202,7 +248,7 @@ header nav .menu .options:hover {
     max-width: 900px;
     justify-content: center;
     min-height: 60vh;
-    margin: 100px 0;
+    margin: 100px 0 0 0;
     border-radius: 8px;
     box-shadow: 0px 0px 12px rgb(66, 66, 66);
 }
@@ -252,23 +298,20 @@ header nav .menu .options:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     border-radius: 8px;
     margin: 10px;
     width: 200px;
     min-width: 200px;
-    min-height: 500px;
+    min-height: 570px;
     padding-bottom: 5px;
 }
 
 .img-container .image img {
-    height: 400px;
-}
-
-.img-container .image img:hover {
-    animation: agrandarImg 0.5s infinite alternate;
-    /* Se agranda en 2 segundos, infinitamente y alternando entre inicio y fin */
-    display: inline-block;
-    /* Necesario para la transformación */
+    margin: auto 0;
+    max-width: 250px;
+    max-height: 400px;
+    animation: fadeIn 1s forwards;
 }
 
 
@@ -287,6 +330,7 @@ header nav .menu .options:hover {
     opacity: 1;
     justify-content: center;
     align-items: center;
+    animation: fadeIn 1.5s forwards;
 }
 
 .img-container .image .nombre .text {
@@ -305,6 +349,7 @@ header nav .menu .options:hover {
     opacity: 1;
     color: whitesmoke;
     margin-top: 5px;
+    animation: fadeIn 1.5s forwards;
 }
 
 .img-container .image .img2 {
@@ -315,8 +360,9 @@ header nav .menu .options:hover {
     display: flex;
     visibility: visible;
     opacity: 1;
-    animation: fadeIn 0.5s forwards;
+    animation: fadeIn 0.8s forwards;
 }
+
 
 .img-container .image:hover .img1 {
     animation: fadeOut 0.5s forwards;
@@ -347,16 +393,17 @@ header nav .menu .options:hover {
 .footer-container {
     margin: 10px 0;
     background: rgb(15, 15, 15);
-    height: auto;
+    height: 80px;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-family: consolas;
 }
 
 .infoMia {
     width: 90%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
     color: whitesmoke;
@@ -370,23 +417,24 @@ footer a:hover {
     color: aquamarine
 }
 
-.infoMia header {
+.infoMia .header-footer {
     display: flex;
-    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     color: whitesmoke;
 }
 
-.infoMia header p {
+.infoMia .header-footer p {
     font-weight: 400;
     font-size: 24px;
 }
 
-.infoMia .svg-container {
+.header-footer .svg-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    /* background: black; */
     width: 200px;
     color: whitesmoke;
 }
@@ -414,7 +462,6 @@ details summary::before {
     position: absolute;
     color: aquamarine;
     transition: transform 0.5s ease;
-
 }
 
 details[open] summary::before {
@@ -423,20 +470,48 @@ details[open] summary::before {
 
 summary div p {
     padding-left: 20px;
-    padding-bottom: 3px;
+}
+
+.main-footer{
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .contribute {
-    margin-top: 5px;
-    max-width: 200px;
+    max-width: 400px;
+    padding-right: 20px;
 }
 
 .thanks {
-    margin-top: 5px;
-    max-width: 200px;
+    max-width: 400px;
+    padding-right: 20px;
+}
+
+.contribute details .text{
+    animation: fadeIn 1s forwards;
+    color: rgb(192, 192, 192);
+}
+
+.thanks details .text{
+    animation: fadeIn 1s forwards;
+    color: rgb(192, 192, 192);
 }
 
 .createdby {
     margin: 3px;
     padding: 5px;
+}
+
+.ayuda{
+    margin: 20px 0 0 0;
+    padding: 5px;
+    color: rgb(138, 138, 138);
+    opacity: 0.7;
+    animation: ayudaOut 4s infinite;
+    justify-content: center;
+}
+
+.ayuda:hover{
+    animation: none;
+    color: whitesmoke;
 }
